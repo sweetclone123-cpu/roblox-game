@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rojo: Serve",
+      "type": "process",
+      "command": "${workspaceFolder}/.tools/rojo.exe",
+      "args": ["serve", "default.project.json"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Rojo: Sourcemap",
+      "type": "process",
+      "command": "${workspaceFolder}/.tools/rojo.exe",
+      "args": ["sourcemap", "default.project.json", "--output", "sourcemap.json"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rojo: Build test place",
+      "type": "process",
+      "command": "${workspaceFolder}/.tools/rojo.exe",
+      "args": ["build", "default.project.json", "--output", "build/dev.rbxlx"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

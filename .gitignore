@@ -1,0 +1,12 @@
+.tools/
+build/
+sourcemap.json
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+*.rbxm
+*.rbxmx
+.env
+.env.*
+!.env.example

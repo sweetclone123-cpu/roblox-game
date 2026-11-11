@@ -1,0 +1,24 @@
+{
+  "name": "roblox-game",
+  "serveAddress": "127.0.0.1",
+  "servePort": 34872,
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+    "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
+      "RojoShared": { "$path": "src/shared" }
+    },
+    "ServerScriptService": {
+      "$ignoreUnknownInstances": true,
+      "RojoServer": { "$path": "src/server" }
+    },
+    "StarterPlayer": {
+      "$ignoreUnknownInstances": true,
+      "StarterPlayerScripts": {
+        "$ignoreUnknownInstances": true,
+        "RojoClient": { "$path": "src/client" }
+      }
+    }
+  }
+}
